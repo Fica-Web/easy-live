@@ -6,9 +6,9 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <nav className="bg-red-300">
-            <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-24 bg-green-300">
+        <nav className="">
+            <div className="w-full mx-auto px-4 sm:px-10 lg:px-16">
+                <div className="flex items-center justify-between h-24 ">
                     {/* Logo */}
                     <div className="flex items-center">
                         <NavLink to="/" className="text-xl font-bold">

@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaFacebook, FaPhoneAlt } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 
 const Footer = () => {
     return (
@@ -83,8 +84,14 @@ const Footer = () => {
                     {/* Section 4 */}
                     <div>
                         <h4 className="text-white text-lg mb-3">Contact</h4>
-                        <p>Email: trynutritions@gmail.com</p>
-                        <p>Phone: +0123 4567 8910</p>
+                        <div className='flex gap-3 items-center text-lg my-1'>
+                            <IoIosMail className='text-2xl text-secondary' />
+                            <p>trynutritions@gmail.com</p>
+                        </div>
+                        <div className='flex gap-3 items-center text-lg'>
+                            <FaPhoneAlt className='text-lg text-secondary' />
+                            <p>+91 23 4567 8910</p>
+                        </div>
                     </div>
                 </div>
             </div>
