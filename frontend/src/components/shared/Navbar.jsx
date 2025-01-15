@@ -6,7 +6,7 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <nav className="">
+        <nav className="bg-emerald-100">
             <div className="w-full mx-auto px-4 sm:px-10 lg:px-16">
                 <div className="flex items-center justify-between h-24 ">
                     {/* Logo */}
