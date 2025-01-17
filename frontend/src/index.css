@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('./assets/fonts/Recoleta-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Recoleta-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

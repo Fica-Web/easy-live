@@ -40,7 +40,7 @@ const Hero = () => {
                 <div className='h-full flex flex-col'>
                     <div className='h-fit w-fit bg-secondary'>
                         <div className='bg-white rounded-br-3xl'>
-                            <h1 className='text-6xl p-5 font-bold font-serif text-primary whitespace-nowrap'>
+                            <h1 className='text-6xl p-5 font-bold font-custom tracking-wide text-primary whitespace-nowrap'>
                                 Your Period, <br /> <span>Reimagined</span>
                             </h1>
                         </div>

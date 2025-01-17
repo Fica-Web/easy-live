@@ -11,6 +11,9 @@ export default {
         'secondary': '#F598A6',
         'ternary': '#4F76AE'
       },
+      fontFamily: {
+        custom: ['Recoleta',]
+      }
     },
   },
   plugins: [],
