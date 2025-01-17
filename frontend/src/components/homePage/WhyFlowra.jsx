@@ -4,7 +4,7 @@ const WhyFlowra = () => {
     return (
         <div className='px-20 my-16'>
             <div className='flex flex-col items-center gap-6'>
-                <h2 className='text-primary text-5xl font-custom'>
+                <h2 className='text-primary text-5xl font-semiBold'>
                     Why Choose Flowra
                 </h2>
                 <p className='text-center'>

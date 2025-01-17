@@ -12,7 +12,9 @@ export default {
         'ternary': '#4F76AE'
       },
       fontFamily: {
-        custom: ['Recoleta',]
+        custom: ['Recoleta', 'sans-serif'],
+        regular: ['Recoleta Alt', 'sans-serif'],
+        semiBold: ['Recoleta semi', 'sans-serif']
       }
     },
   },
