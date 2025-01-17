@@ -35,12 +35,12 @@ const Hero = () => {
         //         </div>
         //     </div>
         // </div>
-        <div className='h-[90vh] px-20'>
+        <div className='h-[80vh] px-20 pt-3'>
             <div className='h-full flex'>
                 <div className='h-full flex flex-col'>
                     <div className='h-fit w-fit bg-secondary'>
                         <div className='bg-white rounded-br-3xl'>
-                            <h1 className='text-6xl p-5 font-bold font-semiBold tracking-wide text-primary whitespace-nowrap'>
+                            <h1 className='text-7xl p-5 font-bold font-semiBold tracking-wide text-primary whitespace-nowrap'>
                                 Your Period, <br /> <span>Reimagined</span>
                             </h1>
                         </div>
