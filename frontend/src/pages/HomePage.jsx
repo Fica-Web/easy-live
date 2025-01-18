@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/homePage/Hero';
 import WhyFlowra from '../components/homePage/WhyFlowra';
 // import CurvedText from '../components/homePage/CurvedText';
+import SustainablePractice from '../components/homePage/SustainablePractice';
 
 const HomePage = () => {
     return (
@@ -9,6 +10,7 @@ const HomePage = () => {
             <Hero />
             <WhyFlowra />
             {/* <CurvedText /> */}
+            <SustainablePractice />
         </>
     )
 }

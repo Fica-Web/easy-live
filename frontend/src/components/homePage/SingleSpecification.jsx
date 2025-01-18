@@ -2,7 +2,7 @@ import React from 'react'
 
 const SingleSpecification = ({ specification }) => {
     return (
-        <div className='lg:px-16 px-10 border-r border-gray-700 last:border-r-0'>
+        <div className='lg:px-16 px-10 lg:border-r border-gray-700 last:border-r-0'>
             <div className='flex flex-col items-center gap-5 py-4'>
                 <div className='lg:border border-gray-700 w-28 h-28 rounded-full'>
 
