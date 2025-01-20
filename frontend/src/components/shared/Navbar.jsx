@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <nav className="">
-            <div className="w-full mx-auto px-4 sm:px-10 lg:px-16">
+            <div className="w-11/12 mx-auto sm:px-4 lg:px-7">
                 <div className="flex items-center justify-between h-24">
                     {/* Logo */}
                     <div className="flex items-center">
@@ -18,13 +18,13 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden lg:flex lg:space-x-6 space-x-2 items-center">
+                    <div className="hidden lg:flex lg:space-x-6 space-x-2 items-center text-lg text-gray-700 font-medium">
                         {navOptions.map((option) => (
                             <NavLink
                                 key={option.name}
                                 to={option.link}
                                 className={({ isActive }) =>
-                                    `px-3 py-2 rounded-md text-sm font-medium ${isActive ? "text-secondary" : "hover:text-secondary"
+                                    `px-3 py-2 rounded-md ${isActive ? "text-primary" : "hover:text-primary"
                                     }`
                                 }
                             >
@@ -38,7 +38,7 @@ const Navbar = () => {
                         {/* Login Button */}
                         <NavLink
                             to="/login"
-                            className="px-4 py-2 rounded-md text-gray-700 bg-gray-200 hover:bg-secondary-dark"
+                            className="px-4 py-2 rounded-md  hover:bg-secondary-dark"
                         >
                             Login
                         </NavLink>
