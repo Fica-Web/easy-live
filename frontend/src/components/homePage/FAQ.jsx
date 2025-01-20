@@ -70,7 +70,7 @@ const FAQ = () => {
 
     return (
         <div className="bg-pink">
-            <div className="mt-10 lg:mt-20 p-20 py-24">
+            <div className="mt-10 lg:mt-20 p-20 py-28">
                 <h2 className="font-semiBold text-2xl lg:text-4xl xl:text-5xl text-center mb-10 lg:mb-16">You have questions, <br />
                 we have answers.</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -80,7 +80,7 @@ const FAQ = () => {
                             className="border-b border-slate-300 pb-6 p-4"
                         >
                             <button
-                                className="w-full text-left font-semibold flex justify-between items-center font-Montserrat text-textColor text-base lg:text-lg"
+                                className="w-full text-left font-bold font-mono flex justify-between items-center lg:text-xl text-lg"
                                 onClick={() => toggleQuestion(index)}
                             >
                                 {item.question}
