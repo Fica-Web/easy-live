@@ -9,7 +9,9 @@ export default {
       colors: {
         'primary': '#DD1C64',
         'secondary': '#F598A6',
-        'ternary': '#4F76AE'
+        'ternary': '#4F76AE',
+        'pink': '#FDECF0',
+        'brown': '#632231'
       },
       fontFamily: {
         custom: ['Recoleta', 'sans-serif'],

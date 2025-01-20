@@ -4,7 +4,7 @@ import cupImg from '../../assets/images/cup-low.png';
 const SustainablePractice = () => {
     return (
         <div className='w-full px-20'>
-            <div className='bg-secondary rounded-3xl flex relative'>
+            <div className='bg-pink rounded-3xl flex relative'>
                 <div className='flex flex-col mx-16 gap-8 lg:w-1/2 my-20'>
                     <h2 className='text-primary font-semiBold text-6xl lg:max-w-[350px]'>
                         Sustainable Practices

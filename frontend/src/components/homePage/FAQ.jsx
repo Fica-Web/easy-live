@@ -66,40 +66,32 @@ const FAQ = () => {
                 </p>
             ),
         },
-        {
-            question: "Discover Bench Cafe Today",
-            answer: (
-                <p>
-                    Looking for the best restaurant in Barsha? Visit Bench Cafe for an
-                    unforgettable dining experience. From authentic Arabic dishes to
-                    global favorites, we promise to exceed your expectations.
-                </p>
-            ),
-        },
     ];
 
     return (
-        <div className="mt-10 lg:mt-20 w-11/12 mx-auto">
-            <h2 className="font-semiBold text-2xl lg:text-4xl xl:text-6xl text-center mb-10 lg:mb-16">You have questions, <br />
-            we have answers.</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                {faqData.map((item, index) => (
-                    <div
-                        key={index}
-                        className="border-b border-slate-300 pb-6 p-4"
-                    >
-                        <button
-                            className="w-full text-left font-semibold flex justify-between items-center font-Montserrat text-textColor text-base lg:text-lg"
-                            onClick={() => toggleQuestion(index)}
+        <div className="bg-pink">
+            <div className="mt-10 lg:mt-20 p-20 py-24">
+                <h2 className="font-semiBold text-2xl lg:text-4xl xl:text-5xl text-center mb-10 lg:mb-16">You have questions, <br />
+                we have answers.</h2>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    {faqData.map((item, index) => (
+                        <div
+                            key={index}
+                            className="border-b border-slate-300 pb-6 p-4"
                         >
-                            {item.question}
-                            <span>{openIndex === index ? "−" : "+"}</span>
-                        </button>
-                        {openIndex === index && (
-                            <div className="mt-2 text-gray-700 font-Montserrat text-textColor">{item.answer}</div>
-                        )}
-                    </div>
-                ))}
+                            <button
+                                className="w-full text-left font-semibold flex justify-between items-center font-Montserrat text-textColor text-base lg:text-lg"
+                                onClick={() => toggleQuestion(index)}
+                            >
+                                {item.question}
+                                <span>{openIndex === index ? "−" : "+"}</span>
+                            </button>
+                            {openIndex === index && (
+                                <div className="mt-2 text-gray-700 font-Montserrat text-textColor">{item.answer}</div>
+                            )}
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
