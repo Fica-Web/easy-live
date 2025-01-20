@@ -5,6 +5,7 @@ import SpecificationListing from '../components/homePage/SpecificationListing';
 // import CurvedText from '../components/homePage/CurvedText';
 import SustainablePractice from '../components/homePage/SustainablePractice';
 import ProductListing from '../components/homePage/ProductListing';
+import FAQ from '../components/homePage/FAQ';
 
 
 const products = [
@@ -54,6 +55,7 @@ const HomePage = () => {
                 ListingComponent={ProductListing}
                 specifications={products}
             />
+            <FAQ />
         </>
     )
 }
