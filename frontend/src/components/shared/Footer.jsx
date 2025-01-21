@@ -48,8 +48,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+
                 {/* Footer Links */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0">
                     {/* Section 1 */}
                     <div className=''>
                         <h4 className="text-lg mb-3">Why People Like us!</h4>
@@ -66,7 +67,7 @@ const Footer = () => {
                     </div>
                     {/* Section 2 */}
 
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col lg:items-center'>
                         <div className='w-fit'>
                             <h4 className="font-semibold text-lg mb-7">Explore</h4>
                             <div className='flex gap-3 items-center text-lg my-1'>
@@ -85,7 +86,7 @@ const Footer = () => {
                     </div>
 
                     {/* Section 3 */}
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col lg:items-center'>
                         <div>
                             <h4 className="font-semibold text-lg mb-7">Account</h4>
                             <div className="flex flex-col space-y-2">
@@ -105,7 +106,7 @@ const Footer = () => {
                         </div>
                     </div>
                     {/* Section 4 */}
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col lg:items-center'>
                         <div>
                             <h4 className="font-semibold text-lg mb-7" >Contact</h4>
                             <div className='flex gap-3 items-center text-lg my-1'>
@@ -148,7 +149,7 @@ const Footer = () => {
 
                 </div>
 
-                <div className='lg:mt-20 text-lg '>
+                <div className='lg:mt-20 mt-10 text-lg text-center lg:text-start'>
                     <p>
                         ©flowra.in 
                         <span className='mx-3'>Powered by Fica Ads</span>
