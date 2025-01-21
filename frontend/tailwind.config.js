@@ -11,7 +11,9 @@ export default {
         'secondary': '#F598A6',
         'ternary': '#4F76AE',
         'pink': '#FDECF0',
-        'brown': '#632231'
+        'brown': '#632231',
+        'easy-primary-light': '#CFEBE6',
+        'easy-primary-dark': '#A5D9CE'
       },
       fontFamily: {
         custom: ['Recoleta', 'sans-serif'],
