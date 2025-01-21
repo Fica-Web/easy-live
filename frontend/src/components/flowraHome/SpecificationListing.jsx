@@ -1,5 +1,5 @@
 import React from 'react';
-import SingleSpecification from './SingleSpecification';
+import SingleSpecification from '../flowraHome/SingleSpecification';
 
 const SpecificationListing = ({ specifications }) => {
     return (
