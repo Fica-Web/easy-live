@@ -2,6 +2,7 @@ import React from 'react';
 import TitleHero from '../components/reusable/TitleHero';
 import WhyFlowra from '../components/reusable/WhyFlowra';
 import BenefitsListing from '../components/ourStoryPage/BenefitsListing';
+import Sustainability from '../components/ourStoryPage/Sustainability';
 
 const OurStoryPage = () => {
     return (
@@ -17,6 +18,7 @@ const OurStoryPage = () => {
                     to bring to every cycle.`}
             />
             <BenefitsListing />
+            <Sustainability />
         </>
     )
 }
