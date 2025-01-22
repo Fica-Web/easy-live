@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/flowraHome/Hero';
-import WhyFlowra from '../components/flowraHome/WhyFlowra';
+import WhyFlowra from '../components/reusable/WhyFlowra';
 import SpecificationListing from '../components/flowraHome/SpecificationListing';
 // import CurvedText from '../components/homePage/CurvedText';
 import SustainablePractice from '../components/flowraHome/SustainablePractice';
