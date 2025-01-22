@@ -1,6 +1,7 @@
 import React from 'react';
 import TitleHero from '../components/reusable/TitleHero';
 import WhyFlowra from '../components/reusable/WhyFlowra';
+import BenefitsListing from '../components/ourStoryPage/BenefitsListing';
 
 const OurStoryPage = () => {
     return (
@@ -15,6 +16,7 @@ const OurStoryPage = () => {
                     name "Flowra" blends "flow" and "flora," symbolizing the natural beauty of menstruation and the balance we strive
                     to bring to every cycle.`}
             />
+            <BenefitsListing />
         </>
     )
 }
