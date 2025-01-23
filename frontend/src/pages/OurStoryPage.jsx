@@ -4,6 +4,7 @@ import WhyFlowra from '../components/reusable/WhyFlowra';
 import BenefitsListing from '../components/ourStoryPage/BenefitsListing';
 import Commitment from '../components/ourStoryPage/CommitMent';
 import Sustainability from '../components/ourStoryPage/Sustainability';
+import JoinFlowra from '../components/reusable/JoinFlowra';
 
 const OurStoryPage = () => {
     return (
@@ -21,6 +22,7 @@ const OurStoryPage = () => {
             <BenefitsListing />
             <Commitment />
             <Sustainability />
+            <JoinFlowra />
         </>
     )
 }
