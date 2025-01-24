@@ -23,6 +23,7 @@ const Navbar = () => {
                             <NavLink
                                 key={option.name}
                                 to={option.link}
+                                end={option.end || false} // Add `end` property for exact matching
                                 className={({ isActive }) =>
                                     `px-3 py-2 rounded-md ${isActive ? "text-primary" : "hover:text-primary"
                                     }`
@@ -92,6 +93,7 @@ const Navbar = () => {
                         <NavLink
                             key={option.name}
                             to={option.link}
+                            end={option.end || false} // Add `end` property for exact matching
                             className={({ isActive }) =>
                                 `block px-3 py-2 rounded-md text-base font-medium ${isActive ? "text-secondary" : "text-primary hover:text-secondary"
                                 }`

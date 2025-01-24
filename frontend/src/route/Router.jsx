@@ -9,6 +9,7 @@ const AboutPage = lazy(() => import('../pages/AboutPage'));
 const ContactPage = lazy(() => import('../pages/ContactPage'));
 const FlowraHomePage = lazy(() => import('../pages/FlowraHome'));
 const OurStoryPage = lazy(() => import('../pages/OurStoryPage'));
+const HowToUsePage = lazy(() => import('../pages/HowToUsePage'));
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
                 path: '',
                 element: <FlowraHomePage />, // Represents "/flowra"
                 index: true // Default route for "/flowra"
+            },
+            {
+                path: 'how-to-use',
+                element: <HowToUsePage />,
             },
             {
                 path: 'our-story',
