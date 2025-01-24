@@ -8,7 +8,7 @@ const HomePage = () => {
     return (
         <>
             <HomeHero />
-            <HomeProductListing />
+            {/* <HomeProductListing /> */}
             <AboutEasyLive />
             <FlowraSpotlight />
         </>

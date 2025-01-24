@@ -1,18 +1,22 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import easyLiveNavOptions from '../../data/easyLiveNavOptions';
 
 const EasyLiveHeader = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const location = useLocation();
+
+    // Determine navbar background color based on route
+    const isHomePage = location.pathname === '/';
+    const navbarBgClass = isHomePage
+        ? 'bg-easy-primary-light'
+        : 'bg-white';
 
     return (
-        <nav className="relative">
-            {/* Background placeholder for fixed header */}
-            <div className="h-24  bg-easy-primary-light"></div>
-
+        <nav className={`relative ${navbarBgClass} transition-colors duration-300`}>
             <div className="w-11/12 mx-auto sm:px-4 lg:px-7">
-                <div className="flex items-center justify-between h-24 absolute top-0 lg:right-20 lg:left-20 left-8 right-8">
+                <div className="flex items-center justify-between h-24">
                     {/* Logo */}
                     <div className="flex items-center">
                         <NavLink to="/" className="text-2xl font-bold text-dark-green">
@@ -27,7 +31,8 @@ const EasyLiveHeader = () => {
                                 key={option.name}
                                 to={option.link}
                                 className={({ isActive }) =>
-                                    `px-3 py-2 rounded-md transition-colors duration-200 ${isActive ? "text-primary font-semibold" : "hover:text-primary"
+                                    `px-3 py-2 rounded-md transition-colors duration-200 ${
+                                        isActive ? "text-primary font-semibold" : "hover:text-primary"
                                     }`
                                 }
                             >
@@ -62,7 +67,9 @@ const EasyLiveHeader = () => {
                             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
                         >
                             <svg
-                                className={`h-6 w-6 transition-transform duration-300 ${isMobileMenuOpen ? "rotate-90" : ""}`}
+                                className={`h-6 w-6 transition-transform duration-300 ${
+                                    isMobileMenuOpen ? "rotate-90" : ""
+                                }`}
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -87,8 +94,9 @@ const EasyLiveHeader = () => {
             {/* Mobile Menu */}
             <div
                 id="mobile-menu"
-                className={`overflow-hidden transition-[max-height] duration-500 ease-in-out bg-gray-100 lg:hidden ${isMobileMenuOpen ? "max-h-screen" : "max-h-0"
-                    }`}
+                className={`overflow-hidden transition-[max-height] duration-500 ease-in-out bg-gray-100 lg:hidden ${
+                    isMobileMenuOpen ? "max-h-screen" : "max-h-0"
+                }`}
             >
                 <div className="px-6 py-4 space-y-3">
                     {easyLiveNavOptions.map((option) => (
@@ -96,7 +104,10 @@ const EasyLiveHeader = () => {
                             key={option.name}
                             to={option.link}
                             className={({ isActive }) =>
-                                `block px-4 py-2 rounded-md text-base font-medium transition-colors duration-200 ${isActive ? "text-secondary font-semibold" : "text-gray-700 hover:text-secondary"
+                                `block px-4 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                                    isActive
+                                        ? "text-secondary font-semibold"
+                                        : "text-gray-700 hover:text-secondary"
                                 }`
                             }
                             onClick={() => setIsMobileMenuOpen(false)} // Close menu on click
