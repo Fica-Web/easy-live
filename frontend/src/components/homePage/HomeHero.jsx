@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const HomeHero = () => {
     return (
-        <section className="bg-gradient-to-br from-easy-primary-light to-easy-primary-dark py-16 px-8 lg:px-20">
+        <section className="bg-gradient-to-b from-easy-primary-light to-easy-primary-dark py-16 px-8 lg:px-20">
             <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
                 {/* Left Side */}
                 <div className="lg:w-1/2 text-center lg:text-left">

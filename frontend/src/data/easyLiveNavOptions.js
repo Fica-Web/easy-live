@@ -1,8 +1,8 @@
-const navOptions = [
+const easyLiveNavOptions = [
     { name: "Home", link: "/" },
     { name: "Product", link: "/flowra" },
-    { name: "Our Story", link: "/flowra/our-story" },
+    { name: "About Us", link: "/about" },
     { name: "Contact", link: "/contact" },
 ];
 
-export default navOptions;
+export default easyLiveNavOptions;

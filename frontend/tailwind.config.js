@@ -13,7 +13,8 @@ export default {
         'pink': '#FDECF0',
         'brown': '#632231',
         'easy-primary-light': '#CFEBE6',
-        'easy-primary-dark': '#A5D9CE'
+        'easy-primary-dark': '#A5D9CE',
+        'dark-green': '#003E52'
       },
       fontFamily: {
         custom: ['Recoleta', 'sans-serif'],
