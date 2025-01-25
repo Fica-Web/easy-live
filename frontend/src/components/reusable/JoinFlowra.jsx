@@ -15,7 +15,7 @@ const JoinFlowra = () => {
                             It’s time to rewrite the period story. Choose Flowra and enjoy an
                             experience that’s empowering, eco-friendly, and totally YOU.
                         </p>
-                        <div className='border border-primary text-lg rounded-full px-6 p-1 flex items-center gap-2'>
+                        <div className='border border-primary text-lg rounded-full px-6 p-2 flex items-center gap-2'>
                             <button className=''>
                                 Join Now
                             </button>

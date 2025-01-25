@@ -5,7 +5,9 @@ import SpecificationListing from '../components/flowraHome/SpecificationListing'
 import CurvedText from '../components/flowraHome/CurvedText';
 import SustainablePractice from '../components/flowraHome/SustainablePractice';
 import ProductListing from '../components/flowraHome/ProductListing';
+import Impact from '../components/flowraHome/Impact';
 import FAQ from '../components/flowraHome/FAQ';
+import JoinFlowra from '../components/reusable/JoinFlowra';
 
 const products = [
     {
@@ -54,7 +56,9 @@ const FlowraHome = () => {
                 ListingComponent={ProductListing}
                 specifications={products}
             />
+            <Impact />
             <FAQ />
+            <JoinFlowra />
         </>
     )
 }
