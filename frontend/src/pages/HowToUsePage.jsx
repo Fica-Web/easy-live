@@ -4,6 +4,7 @@ import TitleHero from '../components/reusable/TitleHero';
 import PeriodFine from '../components/howToUsePage/PeriodFine';
 import WhyFlowra from '../components/reusable/WhyFlowra';
 import ProcessListing from '../components/howToUsePage/ProcessListing';
+import SizeChart from '../components/howToUsePage/SizeChart';
 
 const HowToUsePage = () => {
     return (
@@ -18,6 +19,7 @@ const HowToUsePage = () => {
                 ListingComponent={ProcessListing}
                 specifications={processes}
             /> 
+            <SizeChart />
         </>
     )
 }

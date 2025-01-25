@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../components/flowraHome/Hero';
 import WhyFlowra from '../components/reusable/WhyFlowra';
 import SpecificationListing from '../components/flowraHome/SpecificationListing';
-// import CurvedText from '../components/homePage/CurvedText';
+import CurvedText from '../components/flowraHome/CurvedText';
 import SustainablePractice from '../components/flowraHome/SustainablePractice';
 import ProductListing from '../components/flowraHome/ProductListing';
 import FAQ from '../components/flowraHome/FAQ';
@@ -46,7 +46,7 @@ const FlowraHome = () => {
                 ListingComponent={SpecificationListing}
                 specifications={specifications}
             />
-            {/* <CurvedText /> */}
+            <CurvedText />
             <SustainablePractice />
             <WhyFlowra 
                 title='Choose the right Flowra product made just for you'
