@@ -3,7 +3,7 @@ import cupImage from '../../assets/images/singleCup-low.png'
 
 const PeriodFine = () => {
     return (
-        <div className='w-11/12 mx-auto sm:px-4 lg:px-7 my-28'>
+        <div className='w-11/12 mx-auto sm:px-4 lg:px-7 lg:my-36 my-24'>
             <div className='relative'>
                 <h2 className='text-center lg:text-8xl/snug sm:text-6xl text-3xl font-semiBold text-primary '>
                     Period is Fine <br />
