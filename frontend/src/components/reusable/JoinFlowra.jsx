@@ -25,7 +25,7 @@ const JoinFlowra = () => {
                 </div>
             </div>
 
-            <div className="w-full absolute lg:top-32 sm:top-40 top-72">
+            <div className="w-full absolute lg:top-32 sm:top-40 top-72 -z-10">
                 <img
                     src={curvedTextImg}
                     alt="Curved text image"
