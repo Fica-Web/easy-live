@@ -1,9 +1,6 @@
 import React from 'react';
 import SingleBenefit from './SingleBenefit';
-
-const benefits = [
-    1, 2, 3
-]
+import benefits from '../../data/benefits';
 
 const BenefitsListing = () => {
     return (
