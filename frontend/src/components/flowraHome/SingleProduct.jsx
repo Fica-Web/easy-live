@@ -27,7 +27,7 @@ const SingleProduct = ({ product }) => {
                 {/* Product Description */}
                 <p className="text-gray-600 mb-6">{description}</p>
 
-                <button className="px-4 py-2 bg-primary text-white rounded-full hover:bg-opacity-90">
+                <button className="px-4 py-3 bg-primary text-white rounded-full hover:bg-opacity-90">
                     Add to Cart
                 </button>
             </div>
