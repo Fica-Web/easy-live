@@ -1,4 +1,5 @@
 import { useForm, FormProvider } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 import { FaRegUser } from 'react-icons/fa';
 import { GoMail } from 'react-icons/go';
 import FormInput from '../components/reusable/FormInput';
@@ -85,6 +86,14 @@ const SignUp = () => {
                         </button>
                     </form>
                 </FormProvider>
+                <div className="my-4">
+                    <h1 className='text-gray-600 text-center'>
+                        Already have an account? 
+                        <Link to={'/login'} className='text-blue-600 hover:text-blue-800 font-semibold cursor-pointer px-2'>
+                            Login
+                        </Link>
+                    </h1>
+                </div>
             </div>
         </div>
     );
