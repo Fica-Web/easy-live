@@ -29,7 +29,10 @@ const HowToUsePage = () => {
                 </h3>
                 <ProductListing specifications={products} />
             </div>
-            
+            <WhyFlowra 
+                title='We love getting to know you.'
+                description="Send us your doubts, questions, compliments and PMS memes - any time of the month. Write to us at @"
+            /> 
         </>
     )
 }
