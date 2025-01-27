@@ -1,4 +1,26 @@
-import React from 'react'
+import React from 'react';
+import SingleModel from './SingleModel';
+import small from '../../assets/images/small.png';
+import medium from '../../assets/images/medium.png';
+import large from '../../assets/images/large.png';
+
+const sizes = [
+    {
+        size: 'S',
+        description: 'Recommended for those who have already been pregnant or are 30 years or older.',
+        img: small
+    },
+    {
+        size: 'M',
+        description: 'Recommended for those who have already been pregnant or are 30 years or older.',
+        img: medium
+    },
+    {
+        size: 'L',
+        description: 'Recommended for those who have already been pregnant or are 30 years or older.',
+        img: large
+    },
+]
 
 const SizeChart = () => {
     return (
@@ -14,7 +36,16 @@ const SizeChart = () => {
                     </p>
                 </div> 
                 
-                              
+                <div className='flex justify-center mt-16'>
+                    <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1'>
+                        {sizes.map(size => (
+                            <SingleModel 
+                                key={size.id}
+                                model={size}
+                            />
+                        ))}
+                    </div>
+                </div>              
             </div>
         </div>
     )

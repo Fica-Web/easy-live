@@ -5,6 +5,7 @@ import BenefitsListing from '../components/ourStoryPage/BenefitsListing';
 import Commitment from '../components/ourStoryPage/CommitMent';
 import Sustainability from '../components/ourStoryPage/Sustainability';
 import JoinFlowra from '../components/reusable/JoinFlowra';
+import CurvedText from '../components/flowraHome/CurvedText';
 
 const OurStoryPage = () => {
     return (
@@ -19,6 +20,7 @@ const OurStoryPage = () => {
                     name "Flowra" blends "flow" and "flora," symbolizing the natural beauty of menstruation and the balance we strive
                     to bring to every cycle.`}
             />
+            <CurvedText />
             <BenefitsListing />
             <Commitment />
             <Sustainability />
