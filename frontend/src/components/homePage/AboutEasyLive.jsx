@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutEasyLive = () => {
     return (
-        <section className="flex flex-col lg:flex-row items-center gap-10 py-16 px-8 lg:px-20 bg-gradient-to-b from-white to-[#F598A6]">
+        <section className="flex flex-col lg:flex-row items-center gap-10 py-16 px-8 lg:px-20 bg-gradient-to-b from-white to-easy-primary-dark">
             {/* Left Content */}
             <div className="lg:w-1/2 text-center lg:text-left">
                 <h2 className="text-3xl font-bold text-brown mb-4">

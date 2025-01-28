@@ -9,7 +9,7 @@ const FAQ = () => {
 
     const faqData = [
         {
-            question: "What Makes Bench Cafe Exceptional?",
+            question: "Is it hard to use a menstrual cup?",
             answer: (
                 <>
                     <p className="my-2"><strong>Diverse Menu Options</strong></p>
@@ -24,7 +24,7 @@ const FAQ = () => {
             ),
         },
         {
-            question: "Is Barsha Heights Expensive?",
+            question: "How do I clean my Flowra cup?",
             answer: (
                 <p>
                     Barsha Heights is known for its upscale lifestyle, offering high-quality
@@ -35,7 +35,7 @@ const FAQ = () => {
             ),
         },
         {
-            question: "Why You Should Choose Bench Cafe",
+            question: "Can I wear it while sleeping or swimming?",
             answer: (
                 <>
                     <p><strong>Perfect Ambiance</strong></p>
@@ -50,7 +50,7 @@ const FAQ = () => {
             ),
         },
         {
-            question: "How Bench Cafe Competes with Other Restaurants",
+            question: "What if it doesn't fit?",
             answer: (
                 <p>
                     In a neighborhood bustling with dining options, Bench Cafe distinguishes
