@@ -25,7 +25,7 @@ const CartTable = () => {
     );
 
     return (
-        <div className="w-11/12 mx-auto my-10">
+        <div className="w-11/12 lg:w-10/12 mx-auto my-10">
             {cartItems.length === 0 ? (
                 <p className="text-center text-gray-600">Your cart is empty!</p>
             ) : (
@@ -33,7 +33,7 @@ const CartTable = () => {
                     <div className="hidden md:block">
                         <table className="w-full border-collapse">
                             <thead>
-                                <tr className="border-b-2 border-gray-300">
+                                <tr className="border-b-2 border-dark-green">
                                     <th className="py-5 font-semibold text-lg text-center">Image</th>
                                     <th className="py-5 font-semibold text-lg text-center">Product</th>
                                     <th className="py-5 font-semibold text-lg text-center">Price</th>
@@ -44,8 +44,8 @@ const CartTable = () => {
                             </thead>
                             <tbody>
                                 {cartItems.map((item) => (
-                                    <tr key={item.id} className="hover:bg-gray-50">
-                                        <td className="p-3 flex justify-center">
+                                    <tr key={item.id} className="hover:bg-gray-50 border-b">
+                                        <td className="p-3 py-6 flex justify-center">
                                             <img
                                                 src='https://themewagon.github.io/furni/images/product-1.png'
                                                 alt={item.name}
@@ -126,12 +126,12 @@ const CartTable = () => {
                         ))}
                     </div>
 
-                    <div className="mt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+                    {/* <div className="mt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
                         <h3 className="text-xl font-bold">Total: ${totalAmount.toFixed(2)}</h3>
                         <button className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600">
                             Checkout
                         </button>
-                    </div>
+                    </div> */}
                 </>
             )}
         </div>

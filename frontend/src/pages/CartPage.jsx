@@ -1,5 +1,6 @@
 import React from "react";
 import CartTable from "../components/cartPage/CartTable";
+import CartPricing from "../components/cartPage/CartPricing";
 
 const CartPage = () => {
     // Sample cart data for UI demonstration
@@ -25,6 +26,7 @@ const CartPage = () => {
     return (
         <>
             <CartTable />
+            <CartPricing />
         </>
     );
 };
