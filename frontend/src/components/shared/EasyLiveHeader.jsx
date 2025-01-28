@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { HiOutlineShoppingBag } from "react-icons/hi";
-import easyLiveNavOptions from '../../data/easyLiveNavOptions';
+import logo from '../../assets/images/easy.png'
+import navOptions from '../../data/navOptions';
 
 const EasyLiveHeader = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,19 +21,22 @@ const EasyLiveHeader = () => {
                     {/* Logo */}
                     <div className="flex items-center">
                         <NavLink to="/" className="text-2xl font-bold text-dark-green">
-                            Logo
+                            <img
+                                src={logo}
+                                alt="Flowra Logo"
+                                className='lg:h-12 sm:h-10 h-8'
+                            />
                         </NavLink>
                     </div>
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex items-center space-x-6 text-lg text-dark-green font-medium">
-                        {easyLiveNavOptions.map((option) => (
+                        {navOptions.map((option) => (
                             <NavLink
                                 key={option.name}
                                 to={option.link}
                                 className={({ isActive }) =>
-                                    `px-3 py-2 rounded-md transition-colors duration-200 ${
-                                        isActive ? "text-primary font-semibold" : "hover:text-primary"
+                                    `px-3 py-2 rounded-md transition-colors duration-200 ${isActive ? "text-primary font-semibold" : "hover:text-primary"
                                     }`
                                 }
                             >
@@ -67,9 +71,8 @@ const EasyLiveHeader = () => {
                             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
                         >
                             <svg
-                                className={`h-6 w-6 transition-transform duration-300 ${
-                                    isMobileMenuOpen ? "rotate-90" : ""
-                                }`}
+                                className={`h-6 w-6 transition-transform duration-300 ${isMobileMenuOpen ? "rotate-90" : ""
+                                    }`}
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -94,20 +97,18 @@ const EasyLiveHeader = () => {
             {/* Mobile Menu */}
             <div
                 id="mobile-menu"
-                className={`overflow-hidden transition-[max-height] duration-500 ease-in-out bg-gray-100 lg:hidden ${
-                    isMobileMenuOpen ? "max-h-screen" : "max-h-0"
-                }`}
+                className={`overflow-hidden transition-[max-height] duration-500 ease-in-out bg-gray-100 lg:hidden ${isMobileMenuOpen ? "max-h-screen" : "max-h-0"
+                    }`}
             >
                 <div className="px-6 py-4 space-y-3">
-                    {easyLiveNavOptions.map((option) => (
+                    {navOptions.map((option) => (
                         <NavLink
                             key={option.name}
                             to={option.link}
                             className={({ isActive }) =>
-                                `block px-4 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
-                                    isActive
-                                        ? "text-secondary font-semibold"
-                                        : "text-gray-700 hover:text-secondary"
+                                `block px-4 py-2 rounded-md text-base font-medium transition-colors duration-200 ${isActive
+                                    ? "text-secondary font-semibold"
+                                    : "text-gray-700 hover:text-secondary"
                                 }`
                             }
                             onClick={() => setIsMobileMenuOpen(false)} // Close menu on click

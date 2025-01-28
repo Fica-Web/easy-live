@@ -48,9 +48,11 @@ const FlowraSpotlight = () => {
                                 eco-friendly alternative designed to empower women worldwide.
                             </p>
                             <div className='flex justify-center lg:justify-start'>
-                                <button className='bg-primary text-white p-3 px-10 rounded-full text-lg font-thin'>
-                                    Learn More
-                                </button>
+                                <Link to={'/flowra'}>
+                                    <button className='bg-primary text-white p-3 px-10 rounded-full text-lg font-thin'>
+                                        Learn More
+                                    </button>
+                                </Link>
                             </div>
                         </div>
         

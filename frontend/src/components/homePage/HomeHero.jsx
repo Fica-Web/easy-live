@@ -7,7 +7,7 @@ const HomeHero = () => {
             <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
                 {/* Left Side */}
                 <div className="lg:w-1/2 text-center lg:text-left lg:max-w- ">
-                    <div className='w-4/5 lg:px-10'>
+                    <div className='w-4/5 lg:px-10 mx-auto'>
                         <h1 className="font-regular text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
                             Choose a better you
                         </h1>
