@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { HiOutlineShoppingBag } from "react-icons/hi";
+import logo from '../../assets/images/FlowraLogo.png';
 import navOptions from '../../data/navOptions';
 
 const Navbar = () => {
@@ -12,8 +13,12 @@ const Navbar = () => {
                 <div className="flex items-center justify-between h-24">
                     {/* Logo */}
                     <div className="flex items-center">
-                        <NavLink to="/" className="text-xl font-bold">
-                            <h2 className="text-2xl">logo</h2>
+                        <NavLink to="/flowra" className="text-xl font-bold">
+                            <img 
+                                src={logo} 
+                                alt="Flowra Logo"
+                                className='lg:h-12 sm:h-10 h-8'
+                            />
                         </NavLink>
                     </div>
 

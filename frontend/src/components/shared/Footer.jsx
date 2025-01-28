@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaInstagram, FaLinkedin, FaFacebook, FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import flowraLogo from '../../assets/images/FlowraLogo.png';
 
 const Footer = () => {
     return (
@@ -11,13 +13,16 @@ const Footer = () => {
             <div className="mx-auto py-10 px-4 sm:px-10 lg:px-16">
                 {/* Top Section */}
                 <div className="pb-4 mb-4 border-b border-yellow-500/50">
-                    <div className="flex flex-wrap justify-between items-center">
+                    <div className="flex  justify-between items-center ">
                         {/* Logo Section */}
-                        <div className="w-full lg:w-1/4 mb-4 lg:mb-0">
-                            <a href="#">
-                                <h1 className="text-yellow-500 text-2xl font-bold">FLOWRA</h1>
-                                <p className="text-gray-500">Menstrual Cups</p>
-                            </a>
+                        <div className="w-full lg:w-1/4 mb-4 lg:mb-0 sm:mt-0 mt-3">
+                            <Link to={'/flowra'}>
+                                <img 
+                                    src={flowraLogo} 
+                                    alt="Flowra Logo" 
+                                    className='lg:h-12 sm:h-10 h-8'
+                                />
+                            </Link>
                         </div>
                         {/* Social Icons */}
                         <div className="w-full lg:w-1/4 flex justify-end space-x-3">
