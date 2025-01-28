@@ -7,6 +7,7 @@ import FlowraLayout from '../layout/FlowraLayout';
 const HomePage = lazy(() => import('../pages/HomePage'));
 const AboutPage = lazy(() => import('../pages/AboutPage'));
 const ContactPage = lazy(() => import('../pages/ContactPage'));
+const CartPage = lazy(() => import('../pages/CartPage'));
 const FlowraHomePage = lazy(() => import('../pages/FlowraHome'));
 const OurStoryPage = lazy(() => import('../pages/OurStoryPage'));
 const HowToUsePage = lazy(() => import('../pages/HowToUsePage'));
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
                 path: 'contact',
                 element: <ContactPage />
             },
+            {
+                path: 'cart',
+                element: <CartPage />
+            }
         ],
     },
     {
