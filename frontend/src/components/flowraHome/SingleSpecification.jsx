@@ -7,11 +7,11 @@ const SingleSpecification = ({ specification }) => {
                 <div className='border border-gray-700 w-28 h-28 rounded-full'>
 
                 </div>
-                <h3 className='text-primary font-semiBold text-2xl mt-8 lg:mt-1'>
-                    Simple and Hassle Free
+                <h3 className='text-primary font-semiBold text-2xl mt-8 lg:mt-1 text-center'>
+                    {specification.title}
                 </h3>
                 <p className='text-center text-lg text-gray-700 lg:max-w-72 '>
-                    Easy to use and clean, with a guide to help you every step of the way.
+                    {specification.description}
                 </p>
             </div>
         </div>

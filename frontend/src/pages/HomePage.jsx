@@ -5,9 +5,9 @@ import AboutEasyLive from '../components/homePage/AboutEasyLive';
 import FlowraSpotlight from '../components/homePage/FlowraSpotLight';
 import WhyEasyLive from '../components/homePage/WhyEasyLive';
 import SpecificationListing from '../components/flowraHome/SpecificationListing';
+import easyLiveSpecifications from '../data/easyLiveSpecification';
 
 const HomePage = () => {
-    const specifications = [1, 3, 2];
     return (
         <>
             <HomeHero />
@@ -17,7 +17,7 @@ const HomePage = () => {
             <WhyEasyLive 
                 title='Why EasyLive'
                 ListingComponent={SpecificationListing} 
-                specifications={specifications}
+                specifications={easyLiveSpecifications}
             />
         </>
     )

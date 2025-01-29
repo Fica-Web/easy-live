@@ -10,9 +10,9 @@ import FAQ from '../components/flowraHome/FAQ';
 import JoinFlowra from '../components/reusable/JoinFlowra';
 import ImageGrid from '../components/flowraHome/ImageGrid';
 import products from '../data/products';
+import flowraSpecifcation from '../data/flowraSpecifications';
 
 const FlowraHome = () => {
-    const specifications = [1, 3, 2];
 
     return (
         <>
@@ -21,7 +21,7 @@ const FlowraHome = () => {
                 title='Why Choose Flowra'
                 description="Periods deserve a glow up gentle on your body, great for the planet, and drama free. Flowra isn’t just a cup; it's your new best period buddy. Let's ditch the drama and flow better together"
                 ListingComponent={SpecificationListing}
-                specifications={specifications}
+                specifications={flowraSpecifcation}
             />
             <CurvedText />
             <SustainablePractice />

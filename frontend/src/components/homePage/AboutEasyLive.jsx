@@ -17,9 +17,9 @@ const AboutEasyLive = () => {
         //             reshaping the way we think about hygiene.
         //         </p>
         //         {/* <ul className="text-gray-600 list-disc list-inside mb-6">
-        //             <li>High-quality hygiene and personal care products</li>
-        //             <li>Affordable and accessible solutions for all</li>
-        //             <li>Commitment to sustainability and eco-friendly packaging</li>
+                    // <li>High-quality hygiene and personal care products</li>
+                    // <li>Affordable and accessible solutions for all</li>
+                    // <li>Commitment to sustainability and eco-friendly packaging</li>
         //             <li>Supporting communities and social causes</li>
         //         </ul> */}
         //         {/* <button className="bg-brown text-white px-6 py-2 rounded-md hover:bg-gray-800 transition">
