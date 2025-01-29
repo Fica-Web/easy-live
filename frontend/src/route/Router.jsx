@@ -8,9 +8,11 @@ const HomePage = lazy(() => import('../pages/HomePage'));
 const AboutPage = lazy(() => import('../pages/AboutPage'));
 const ContactPage = lazy(() => import('../pages/ContactPage'));
 const CartPage = lazy(() => import('../pages/CartPage'));
+const ShopPage = lazy(() => import('../pages/ShopPage'));
 const FlowraHomePage = lazy(() => import('../pages/FlowraHome'));
 const OurStoryPage = lazy(() => import('../pages/OurStoryPage'));
 const HowToUsePage = lazy(() => import('../pages/HowToUsePage'));
+const BlogPage = lazy(() => import('../pages/BlogPage'));
 const UserLoginPage = lazy(() => import('../pages/UserLoginPage'));
 const UserSignUpPage = lazy(() => import('../pages/UserSignUpPage'));
 
@@ -35,7 +37,11 @@ const router = createBrowserRouter([
             {
                 path: 'cart',
                 element: <CartPage />
-            }
+            },
+            {
+                path: 'shop',
+                element: <ShopPage />
+            },
         ],
     },
     {
@@ -54,6 +60,10 @@ const router = createBrowserRouter([
             {
                 path: 'our-story',
                 element: <OurStoryPage />, // Represents "/flowra/our-story"
+            },
+            {
+                path: 'blog',
+                element: <BlogPage />, 
             },
         ],
     },

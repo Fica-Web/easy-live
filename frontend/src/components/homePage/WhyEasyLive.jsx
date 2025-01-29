@@ -7,9 +7,9 @@ const WhyEasyLive = ({ title, description, ListingComponent, specifications }) =
                 <h2 className='text-dark-green sm:text-5xl text-3xl font-semiBold max-w-[600px] text-center'>
                     { title }
                 </h2>
-                <p className='text-center text-xl text-gray-700 lg:max-w-5xl tracking-wide leading-9'>
+                {/* <p className='text-center text-xl text-gray-700 lg:max-w-5xl tracking-wide leading-9'>
                     { description }
-                </p>
+                </p> */}
             </div>
 
             {ListingComponent && (
