@@ -37,34 +37,34 @@ const FlowraSpotlight = () => {
         // </section>
 
         <div className='w-11/12 mx-auto sm:px-4 lg:px-7 my-20'>
-                    <div className='bg-pink rounded-3xl lg:flex relative'>
-                        <div className='flex flex-col lg:mx-16  px-4 sm:px-8 lg:pt-0 pt-10 gap-8 lg:w-1/2 w-full lg:my-20 sm:my-12 my-5 '>
-                            <h2 className='text-primary font-semiBold text-center lg:text-start lg:text-6xl text-4xl '>
-                                Introducing Flowra Menstrual Cup
-                            </h2>
-                            <p className=' lg:text-lg '>
-                                The ultimate solution for comfort and sustainability. Say goodbye to
-                                single-use menstrual products and hello to a cost-effective,
-                                eco-friendly alternative designed to empower women worldwide.
-                            </p>
-                            <div className='flex justify-center lg:justify-start'>
-                                <Link to={'/flowra'}>
-                                    <button className='bg-primary text-white p-3 px-10 rounded-full text-lg font-thin'>
-                                        Learn More
-                                    </button>
-                                </Link>
-                            </div>
-                        </div>
-        
-                        <div  className='flex items-end justify-end'>
-                            <img 
-                                src={flowraImage}
-                                alt="Flowra Cup Image" 
-                                className='lg:absolute right-0 bottom-0'
-                            />
-                        </div>
+            <div className='bg-easy-primary-light rounded-3xl lg:flex relative'>
+                <div className='flex flex-col lg:mx-16  px-4 sm:px-8 lg:pt-0 pt-10 gap-8 lg:w-1/2 w-full lg:my-20 sm:my-12 my-5 '>
+                    <h2 className='text-dark-green font-semiBold text-center lg:text-start lg:text-6xl text-4xl '>
+                        Introducing Flowra Menstrual Cup
+                    </h2>
+                    <p className=' lg:text-lg '>
+                        The ultimate solution for comfort and sustainability. Say goodbye to
+                        single-use menstrual products and hello to a cost-effective,
+                        eco-friendly alternative designed to empower women worldwide.
+                    </p>
+                    <div className='flex justify-center lg:justify-start'>
+                        <Link to={'/flowra'}>
+                            <button className='bg-dark-green text-white p-3 px-10 rounded-full text-lg font-thin'>
+                                Learn More
+                            </button>
+                        </Link>
                     </div>
                 </div>
+
+                <div className='flex items-end justify-end'>
+                    <img
+                        src={flowraImage}
+                        alt="Flowra Cup Image"
+                        className='lg:absolute right-0 bottom-0'
+                    />
+                </div>
+            </div>
+        </div>
     );
 };
 

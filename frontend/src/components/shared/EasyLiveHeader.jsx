@@ -11,7 +11,7 @@ const EasyLiveHeader = () => {
     // Determine navbar background color based on route
     const isHomePage = location.pathname === '/';
     const navbarBgClass = isHomePage
-        ? 'bg-easy-primary-light'
+        ? 'bg-white'
         : 'bg-white';
 
     return (
