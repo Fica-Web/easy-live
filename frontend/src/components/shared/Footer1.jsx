@@ -76,15 +76,15 @@ const Footer1 = () => {
                         <div className='w-fit'>
                             <h4 className="font-semibold text-lg mb-7">Explore</h4>
                             <div className='flex gap-3 items-center text-lg my-1'>
-                                <IoIosMail className='text-2xl text-secondary' />
+                                <IoIosMail className='text-2xl' />
                                 <p>info@flowra.in</p>
                             </div>
                             <div className='flex gap-3 items-center text-lg'>
-                                <FaPhoneAlt className='text-lg text-secondary' />
+                                <FaPhoneAlt className='text-lg' />
                                 <p>+91 98754 32100</p>
                             </div>
                             <div className='flex gap-3 items-center text-lg'>
-                                <FaPhoneAlt className='text-lg text-secondary' />
+                                <FaPhoneAlt className='text-lg' />
                                 <p>Kozhikode, Kerala, India</p>
                             </div>
                         </div>
@@ -124,7 +124,7 @@ const Footer1 = () => {
                             </div>
                             <div className="flex gap-3 mt-3">
                                 <a
-                                    className="p-2 border border-gray-500 rounded-full hover:text-white hover:border-white"
+                                    className="p-2 border border-gray-500 rounded-full hover:text-white hover:bg-dark-green hover:border-white"
                                     href="https://www.instagram.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -132,7 +132,7 @@ const Footer1 = () => {
                                     <FaInstagram className='text-2xl font-semibold' />
                                 </a>
                                 <a
-                                    className="p-2 border border-gray-500 rounded-full text-gray-400 hover:text-white hover:border-white"
+                                    className="p-2 border border-gray-500 rounded-full hover:text-white hover:bg-dark-green hover:border-white"
                                     href="https://www.facebook.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -140,7 +140,7 @@ const Footer1 = () => {
                                     <FaFacebook className='text-2xl font-semibold' />
                                 </a>
                                 <a
-                                    className="p-2 border border-gray-500 rounded-full text-gray-400 hover:text-white hover:border-white"
+                                    className="p-2 border border-gray-500 rounded-full hover:text-white hover:bg-dark-green hover:border-white"
                                     href="https://www.linkedin.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"

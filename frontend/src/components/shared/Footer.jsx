@@ -76,15 +76,15 @@ const Footer = () => {
                         <div className='w-fit'>
                             <h4 className="font-semibold text-lg mb-7">Explore</h4>
                             <div className='flex gap-3 items-center text-lg my-1'>
-                                <IoIosMail className='text-2xl text-secondary' />
+                                <IoIosMail className='text-2xl' />
                                 <p>info@flowra.in</p>
                             </div>
                             <div className='flex gap-3 items-center text-lg'>
-                                <FaPhoneAlt className='text-lg text-secondary' />
+                                <FaPhoneAlt className='text-lg' />
                                 <p>+91 98754 32100</p>
                             </div>
                             <div className='flex gap-3 items-center text-lg'>
-                                <FaPhoneAlt className='text-lg text-secondary' />
+                                <FaPhoneAlt className='text-lg ' />
                                 <p>Kozhikode, Kerala, India</p>
                             </div>
                         </div>
