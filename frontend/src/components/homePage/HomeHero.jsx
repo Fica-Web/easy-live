@@ -36,7 +36,3 @@ const HomeHero = () => {
 };
 
 export default HomeHero;
-
-<div className=' lg:px-10 mx-auto'>
-
-</div> 

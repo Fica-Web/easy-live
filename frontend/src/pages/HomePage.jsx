@@ -18,6 +18,7 @@ const HomePage = () => {
                 title='Why EasyLive'
                 ListingComponent={SpecificationListing} 
                 specifications={easyLiveSpecifications}
+                style='text-dark-green'
             />
         </>
     )

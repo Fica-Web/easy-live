@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WhyEasyLive = ({ title, description, ListingComponent, specifications }) => {
+const WhyEasyLive = ({ title, description, ListingComponent, specifications, style }) => {
     return (
         <div className='w-11/12 mx-auto sm:px-4 lg:px-7 my-20 lg:my-32'>
             <div className='flex flex-col items-center gap-6'>
@@ -13,7 +13,7 @@ const WhyEasyLive = ({ title, description, ListingComponent, specifications }) =
             </div>
 
             {ListingComponent && (
-                <ListingComponent specifications={specifications} />
+                <ListingComponent specifications={specifications} style={style} />
             )}
         </div>
     )
