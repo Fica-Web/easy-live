@@ -77,7 +77,7 @@ const Footer = () => {
                             <h4 className="font-semibold text-lg mb-7">Explore</h4>
                             <div className='flex gap-3 items-center text-lg my-1'>
                                 <IoIosMail className='text-2xl' />
-                                <p>info@flowra.in</p>
+                                <p>info@flowra.ins</p>
                             </div>
                             <div className='flex gap-3 items-center text-lg'>
                                 <FaPhoneAlt className='text-lg' />

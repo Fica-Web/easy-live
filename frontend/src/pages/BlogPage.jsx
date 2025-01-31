@@ -3,10 +3,11 @@ import TitleHero from '../components/reusable/TitleHero';
 import WhyFlowra from '../components/reusable/WhyFlowra';
 import ProcessListing from '../components/howToUsePage/ProcessListing';
 import advantages from '../data/advantages';
+import JoinFlowra from '../components/reusable/JoinFlowra';
 
 const BlogPage = () => {
     return (
-        <div className='flex flex-col'>
+        <div className=''>
             <TitleHero title={'Blog'} />
             <WhyFlowra 
                 title='What is a Menstrual Cup?'
@@ -18,6 +19,7 @@ const BlogPage = () => {
                 ListingComponent={ProcessListing} 
                 specifications={advantages}
             />
+            <JoinFlowra />
         </div>
     )
 }
