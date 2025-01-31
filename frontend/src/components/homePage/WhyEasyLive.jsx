@@ -19,4 +19,4 @@ const WhyEasyLive = ({ title, description, ListingComponent, specifications, sty
     )
 }
 
-export default WhyEasyLive
+export default WhyEasyLive;
