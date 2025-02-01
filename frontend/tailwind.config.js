@@ -14,6 +14,7 @@ export default {
         'brown': '#632231',
         'easy-primary-light': '#CFEBE6',
         'easy-primary-dark': '#A5D9CE',
+        'easy-secondary': '#28BFC5',
         'dark-green': '#003E52'
       },
       fontFamily: {

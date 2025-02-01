@@ -12,7 +12,7 @@ const Footer1 = () => {
         >
             <div className="mx-auto py-10 px-4 sm:px-10 lg:px-16">
                 {/* Top Section */}
-                <div className="pb-4 mb-4 border-b border-yellow-500/50">
+                <div className="pb-4 mb-4 border-b border-easy-secondary">
                     <div className="flex  justify-between items-center ">
                         {/* Logo Section */}
                         <div className="w-full lg:w-1/4 mb-4 lg:mb-0 sm:mt-0 mt-3">
@@ -26,30 +26,30 @@ const Footer1 = () => {
                         </div>
                         {/* Social Icons */}
                         <div className="w-full lg:w-1/4 flex justify-end space-x-3">
-                            <a
-                                className="p-2 border border-gray-500 rounded-full hover:text-white hover:border-white"
-                                href="https://www.instagram.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaInstagram className='text-2xl font-semibold' />
-                            </a>
-                            <a
-                                className="p-2 border border-gray-500 rounded-full text-gray-400 hover:text-white hover:border-white"
-                                href="https://www.facebook.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaFacebook className='text-2xl font-semibold' />
-                            </a>
-                            <a
-                                className="p-2 border border-gray-500 rounded-full text-gray-400 hover:text-white hover:border-white"
-                                href="https://www.linkedin.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaLinkedin className='text-2xl font-semibold' />
-                            </a>
+                        <a
+                                    className="p-2 border border-gray-500 rounded-full hover:text-white hover:bg-dark-green hover:border-white"
+                                    href="https://www.instagram.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FaInstagram className='text-2xl font-semibold' />
+                                </a>
+                                <a
+                                    className="p-2 border border-gray-500 rounded-full hover:text-white hover:bg-dark-green hover:border-white"
+                                    href="https://www.facebook.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FaFacebook className='text-2xl font-semibold' />
+                                </a>
+                                <a
+                                    className="p-2 border border-gray-500 rounded-full hover:text-white hover:bg-dark-green hover:border-white"
+                                    href="https://www.linkedin.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FaLinkedin className='text-2xl font-semibold' />
+                                </a>
                         </div>
                     </div>
                 </div>
@@ -60,12 +60,12 @@ const Footer1 = () => {
                     <div className=''>
                         <h4 className="text-lg mb-3">Why People Like us!</h4>
                         <p className="mb-4">
-                            TryNutrition is an innovative e-commerce website dedicated to providing a wide range of
-                            nutrient-rich products.
+                            Flowra is our menstrual cup brand that aimsto provide women with a comfortable,
+                            eco-friendly, and ssustainable menstrual care solution.
                         </p>
                         <a
                             href="/contact"
-                            className="inline-block py-2 px-4 border border-gray-500 text-yellow-500 rounded-full hover:bg-yellow-500 hover:text-gray-900"
+                            className="inline-block py-2 px-4 border border-easy-secondary text-dark-green rounded-full hover:bg-easy-secondary  hover:text-white"
                         >
                             Read More
                         </a>

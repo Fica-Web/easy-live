@@ -36,7 +36,7 @@ const EasyLiveHeader = () => {
                                 key={option.name}
                                 to={option.link}
                                 className={({ isActive }) =>
-                                    `px-3 py-2 rounded-md transition-colors duration-200 ${isActive ? "text-primary font-semibold" : "hover:text-primary"
+                                    `px-3 py-2 rounded-md transition-colors duration-200 ${isActive ? "text-easy-secondary font-semibold" : "hover:text-primary"
                                     }`
                                 }
                             >
