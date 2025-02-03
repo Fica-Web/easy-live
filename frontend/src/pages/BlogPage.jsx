@@ -1,9 +1,11 @@
 import React from 'react';
 import TitleHero from '../components/reusable/TitleHero';
 import WhyFlowra from '../components/reusable/WhyFlowra';
-import ProcessListing from '../components/howToUsePage/ProcessListing';
+// import ProcessListing from '../components/howToUsePage/ProcessListing';
+import BlogListing from '../components/blogPage/BlogListing';
 import advantages from '../data/advantages';
 import JoinFlowra from '../components/reusable/JoinFlowra';
+import FirstTimeUsers from '../components/blogPage/FirstTimeUsers';
 
 const BlogPage = () => {
     return (
@@ -16,8 +18,13 @@ const BlogPage = () => {
             <WhyFlowra 
                 title='Benefits of Using a Menstrual Cup'
                 description='Switching to a menstrual cup comes with a plethora of advantages'
-                ListingComponent={ProcessListing} 
+                ListingComponent={BlogListing} 
                 specifications={advantages}
+            />
+            <FirstTimeUsers />
+            <WhyFlowra 
+                title='Why You Should Consider Making the Switch'
+                description='Menstrual cups are more than just a period product; they’re a lifestyle choice that promotes sustainability, body awareness, and financial savings. While it may take some time to adjust, many users find that menstrual cups revolutionize their period experience, offering unparalleled comfort and convenience. If you’re ready to embrace a better way to manage your period, give the menstrual cup a try. Your body, wallet, and the planet will thank you!'
             />
             <JoinFlowra />
         </div>
