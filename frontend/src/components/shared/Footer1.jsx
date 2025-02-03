@@ -6,7 +6,7 @@ import logo from '../../assets/images/easy.png';
 
 const Footer1 = () => {
     return (
-        <div 
+        <div
             // style={{ backgroundImage: 'linear-gradient(#FDECF0 40%, #F598A6 120%)' }}
             className="text-dark-green bg-gradient-to-tr from-easy-primary-dark to-white sm:pt-10 pt-6 lg:px-10 w-full"
         >
@@ -17,39 +17,39 @@ const Footer1 = () => {
                         {/* Logo Section */}
                         <div className="w-full lg:w-1/4 mb-4 lg:mb-0 sm:mt-0 mt-3">
                             <Link to={'/'}>
-                                <img 
-                                    src={logo} 
-                                    alt="Easy Live Logo" 
+                                <img
+                                    src={logo}
+                                    alt="Easy Live Logo"
                                     className='lg:h-12 sm:h-10 h-8'
                                 />
                             </Link>
                         </div>
                         {/* Social Icons */}
                         <div className="w-full lg:w-1/4 flex justify-end space-x-3">
-                        <a
-                                    className="p-2 border border-gray-500 rounded-full hover:text-white hover:bg-dark-green hover:border-white"
-                                    href="https://www.instagram.com/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <FaInstagram className='text-2xl font-semibold' />
-                                </a>
-                                <a
-                                    className="p-2 border border-gray-500 rounded-full hover:text-white hover:bg-dark-green hover:border-white"
-                                    href="https://www.facebook.com/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <FaFacebook className='text-2xl font-semibold' />
-                                </a>
-                                <a
-                                    className="p-2 border border-gray-500 rounded-full hover:text-white hover:bg-dark-green hover:border-white"
-                                    href="https://www.linkedin.com/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <FaLinkedin className='text-2xl font-semibold' />
-                                </a>
+                            <a
+                                className="p-2 border border-gray-500 rounded-full hover:text-white hover:bg-dark-green hover:border-white"
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaInstagram className='text-2xl font-semibold' />
+                            </a>
+                            <a
+                                className="p-2 border border-gray-500 rounded-full hover:text-white hover:bg-dark-green hover:border-white"
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaFacebook className='text-2xl font-semibold' />
+                            </a>
+                            <a
+                                className="p-2 border border-gray-500 rounded-full hover:text-white hover:bg-dark-green hover:border-white"
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaLinkedin className='text-2xl font-semibold' />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -75,17 +75,19 @@ const Footer1 = () => {
                     <div className='flex flex-col lg:items-center'>
                         <div className='w-fit'>
                             <h4 className="font-semibold text-lg mb-7">Explore</h4>
-                            <div className='flex gap-3 items-center text-lg my-1'>
-                                <IoIosMail className='text-2xl' />
-                                <p>info@flowra.in</p>
-                            </div>
-                            <div className='flex gap-3 items-center text-lg'>
-                                <FaPhoneAlt className='text-lg' />
-                                <p>+91 98754 32100</p>
-                            </div>
-                            <div className='flex gap-3 items-center text-lg'>
-                                <FaPhoneAlt className='text-lg' />
-                                <p>Kozhikode, Kerala, India</p>
+                            <div className="flex flex-col space-y-2">
+                                <Link to={'/'} className="hover:font-semibold text-lg">
+                                    Home
+                                </Link>
+                                <Link to={'/shop'} className="hover:font-semibold text-lg">
+                                    Shop
+                                </Link>
+                                <Link to={'/cart'} className="hover:font-semibold text-lg">
+                                    Shopping Cart
+                                </Link>
+                                <Link to={'/flowra/blog'} className="hover:font-semibold text-lg">
+                                    Blog
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -95,18 +97,12 @@ const Footer1 = () => {
                         <div>
                             <h4 className="font-semibold text-lg mb-7">Account</h4>
                             <div className="flex flex-col space-y-2">
-                                <a className="hover:text-white" href="/">
-                                    Home
-                                </a>
-                                <a className="hover:text-white" href="/myAccount">
-                                    My Account
-                                </a>
-                                <a className="hover:text-white" href="/shop">
-                                    Shop details
-                                </a>
-                                <a className="hover:text-white" href="/cart">
-                                    Shopping Cart
-                                </a>
+                                <Link to={'/flowra/blog'} className="hover:font-semibold text-lg">
+                                    Blog
+                                </Link>
+                                <Link to={'/login'} className="hover:font-semibold text-lg">
+                                    Login/Sign up
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -116,11 +112,11 @@ const Footer1 = () => {
                             <h4 className="font-semibold text-lg mb-7" >Contact</h4>
                             <div className='flex gap-3 items-center text-lg my-1'>
                                 <IoIosMail className='text-2xl ' />
-                                <p>trynutritions@gmail.com</p>
+                                <p>info@easy-live.in</p>
                             </div>
                             <div className='flex gap-3 items-center text-lg'>
                                 <FaPhoneAlt className='text-lg ' />
-                                <p>+91 23 4567 8910</p>
+                                <p>+91 86067 37737</p>
                             </div>
                             <div className="flex gap-3 mt-3">
                                 <a
@@ -156,7 +152,7 @@ const Footer1 = () => {
 
                 <div className='lg:mt-20 mt-10 text-lg text-center lg:text-start'>
                     <p>
-                        ©flowra.in 
+                        ©flowra.in
                         <span className='mx-3'>Powered by Fica Ads</span>
                     </p>
                 </div>
