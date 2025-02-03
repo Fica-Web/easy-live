@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import logo from '../../assets/images/easy.png'
-import navOptions from '../../data/navOptions';
+import navOptions from '../../data/easyLiveNavOptions';
 
 const EasyLiveHeader = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -12,7 +12,7 @@ const EasyLiveHeader = () => {
     const isHomePage = location.pathname === '/';
     const navbarBgClass = isHomePage
         ? 'bg-white'
-        : 'bg-white';
+        : 'bg-white shadow-lg';
 
     return (
         <nav className={`relative ${navbarBgClass} transition-colors duration-300`}>
@@ -36,7 +36,7 @@ const EasyLiveHeader = () => {
                                 key={option.name}
                                 to={option.link}
                                 className={({ isActive }) =>
-                                    `px-3 py-2 rounded-md transition-colors duration-200 ${isActive ? "text-easy-secondary font-semibold" : "hover:text-primary"
+                                    `px-3 py-2 rounded-md transition-colors duration-200 ${isActive ? "text-easy-secondary font-semibold" : "hover:text-easy-secondary"
                                     }`
                                 }
                             >
@@ -49,13 +49,13 @@ const EasyLiveHeader = () => {
                     <div className="hidden lg:flex items-center space-x-4">
                         <NavLink
                             to="/login"
-                            className="px-4 py-2 rounded-md text-dark-green hover:text-white transition duration-200"
+                            className="px-4 py-2 rounded-md text-dark-green hover:text-easy-secondary transition duration-200"
                         >
                             Login
                         </NavLink>
                         <NavLink
                             to="/cart"
-                            className="text-2xl text-gray-700 hover:text-secondary transition duration-200"
+                            className="text-2xl text-dark-green hover:text-easy-secondary transition duration-200"
                         >
                             <HiOutlineShoppingBag />
                         </NavLink>
@@ -64,7 +64,7 @@ const EasyLiveHeader = () => {
                     {/* Mobile Menu Button */}
                     <div className="lg:hidden">
                         <button
-                            className="p-2 rounded-md focus:outline-none hover:text-secondary"
+                            className="p-2 rounded-md focus:outline-none hover:text-easy-secondary"
                             aria-label="Toggle mobile menu"
                             aria-expanded={isMobileMenuOpen}
                             aria-controls="mobile-menu"
@@ -107,8 +107,8 @@ const EasyLiveHeader = () => {
                             to={option.link}
                             className={({ isActive }) =>
                                 `block px-4 py-2 rounded-md text-base font-medium transition-colors duration-200 ${isActive
-                                    ? "text-secondary font-semibold"
-                                    : "text-gray-700 hover:text-secondary"
+                                    ? "text-easy-secondary font-semibold"
+                                    : "text-dark-green hover:text-easy-secondary"
                                 }`
                             }
                             onClick={() => setIsMobileMenuOpen(false)} // Close menu on click
@@ -120,7 +120,7 @@ const EasyLiveHeader = () => {
                     {/* Login Button for Mobile */}
                     <NavLink
                         to="/login"
-                        className="block px-4 py-2 rounded-md bg-primary text-white hover:bg-secondary transition duration-200"
+                        className="block px-4 py-2 rounded-md bg-easy-secondary text-white hover:bg-dark-green transition duration-200"
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
                         Login
@@ -129,7 +129,7 @@ const EasyLiveHeader = () => {
                     {/* Cart Button for Mobile */}
                     <NavLink
                         to="/cart"
-                        className="block px-4 py-2 rounded-md text-gray-700 hover:bg-secondary-light transition duration-200"
+                        className="block px-4 py-2 rounded-md text-dark-green hover:bg-secondary-light transition duration-200"
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
                         <HiOutlineShoppingBag className="inline mr-2" />
