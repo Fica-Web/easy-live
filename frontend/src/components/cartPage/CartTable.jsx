@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaTrash, FaPlus, FaMinus } from "react-icons/fa";
+import productImg from '../../assets/images/product-low.png';
 
 const CartTable = () => {
     const cartItems = [
@@ -8,14 +9,14 @@ const CartTable = () => {
             name: "Sample Product 1",
             price: 29.99,
             quantity: 1,
-            image: "https://via.placeholder.com/100",
+            image: productImg,
         },
         {
             id: 2,
             name: "Sample Product 2",
             price: 19.99,
             quantity: 2,
-            image: "https://via.placeholder.com/100",
+            image: productImg,
         },
     ];
 
@@ -47,7 +48,7 @@ const CartTable = () => {
                                     <tr key={item.id} className="hover:bg-gray-50 border-b">
                                         <td className="p-3 py-6 flex justify-center">
                                             <img
-                                                src='https://themewagon.github.io/furni/images/product-1.png'
+                                                src={item.image}
                                                 alt={item.name}
                                                 className="object-cover rounded-lg max-h-24"
                                             />
@@ -92,7 +93,7 @@ const CartTable = () => {
                             >
                                 <div className="flex items-center gap-4">
                                     <img
-                                        src='https://themewagon.github.io/furni/images/product-1.png'
+                                        src={item.image}
                                         alt={item.name}
                                         className="object-cover rounded-lg w-24 h-24"
                                     />
