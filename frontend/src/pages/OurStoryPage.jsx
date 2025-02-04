@@ -1,5 +1,6 @@
 import React from 'react';
 import TitleHero from '../components/reusable/TitleHero';
+import Hero from '../components/ourStoryPage/Hero';
 import WhyFlowra from '../components/reusable/WhyFlowra';
 import BenefitsListing from '../components/ourStoryPage/BenefitsListing';
 import Commitment from '../components/ourStoryPage/CommitMent';
@@ -10,9 +11,7 @@ import CurvedText from '../components/flowraHome/CurvedText';
 const OurStoryPage = () => {
     return (
         <>
-            <TitleHero 
-                title='Our Story'
-            />
+            <Hero />
             <WhyFlowra 
                 title='Why Flowra'
                 description={`At Flowra, we’re reimagining periods with comfort, sustainability, and empowerment at the forefront. Born from a
